@@ -1,0 +1,10 @@
+<h1> put new recipes here </h1>
+<%= simple_form_for @thing, :html => { :class => 'page-form' } do |f| %>
+<div class="row">
+	<%= f.input :recipe_name %>
+	<%= f.input :ingredients %>
+	<%= f.input :first_name  %>
+	<%= f.input :last_name   %>
+	<%= f.input :blog_url    %>
+	<%= f.submit 'Create'    %>
+    <% end %>
